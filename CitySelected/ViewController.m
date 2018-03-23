@@ -2,8 +2,8 @@
 //  ViewController.m
 //  CitySelected
 //
-//  Created by sankai on 16/12/8.
-//  Copyright © 2016年 sankai. All rights reserved.
+//  Created by lichanglai on 16/12/8.
+//  Copyright © 2016年 lichanglai. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -80,40 +80,6 @@
 //        [_provinceCodes addObject:[province valueForKey:@"code"]];
         NSLog(@"\n\n\n");
     }
-
-    
-    
-    
-    
-    
-    
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Province&City&District.plist" ofType:nil];
-//    NSDictionary *dicProvince = [NSDictionary dictionaryWithContentsOfFile:path];
-//
-//    _provinceSelected = @"北京市";
-//    _citySelected = @"北京市";
-//    _areaSelected = @"东城区";
-//    
-//    _provinces =[NSMutableArray arrayWithCapacity:0];
-//    _citiesDic = [NSMutableDictionary dictionaryWithCapacity:0];
-//    _areasDic = [NSMutableDictionary dictionaryWithCapacity:0];
-//    for (NSInteger i = 0; i < 34; i ++) {
-//        NSDictionary *province = [dicProvince valueForKey:[NSString stringWithFormat:@"%ld",i]];
-//        NSMutableArray *cities = [NSMutableArray arrayWithCapacity:0];
-//        for (NSDictionary *city in [province valueForKey:[province valueForKey:@"name"]]) {
-//            NSMutableArray *areaArr = [NSMutableArray arrayWithCapacity:0];
-//            for (NSDictionary *area in [city valueForKey:[city valueForKey:@"name"]]) {
-//                [areaArr addObject:[area valueForKey:@"name"]];
-//            }
-//            [_areasDic setObject:areaArr forKey:[city valueForKey:@"name"]];
-//            [cities addObject:[city valueForKey:@"name"]];
-//        }
-//        [_citiesDic setObject:cities forKey:[province valueForKey:@"name"]];
-//        NSLog(@"%@",[province valueForKey:@"name"]);
-//        [_provinces addObject:[province valueForKey:@"name"]];
-//        NSLog(@"\n\n\n");
-//    }
-    
     
     _pickerViewProvince = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width/3, self.view.bounds.size.height)];
     _pickerViewProvince.delegate = self;
